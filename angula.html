@@ -8,20 +8,16 @@
 </head>
 
 <body>
-  <h1>Hello Angular TARGIL 4 MODUL AND 15 11 2017!</h1>
-  
+  <h1>Hello Angular -- TARGIL 4 MODUL AND 15 11 2017!</h1>
+
   <div ng-controller="targi4App">
-    <input type="number" ng-model="num1" />
-
-    <input type="number" ng-model="num2" />
-
-    
+    Num 1: <input type="number" ng-model="num1" /> 
+    Num 2: <input type="number" ng-model="num2" />
+    <br>
     <p> plus: {{ num1 + num2 | number }} </p>
-
-   <!-- <br> minus: <span ng-bind="num1 - num2 | number"></span>
-    <br> kefel: <span ng-bind="num1 * num2 | number"></span>
-    <br> hiluk: <span ng-bind="num1 / num2 | number"></span>
-   -->
-    </div>
-  </body>
+    <p> minus: {{ num1 - num2 | number }} </p>
+    <p> kefel: {{ num1 * num2 | number }} </p>
+    <p> hiluk: {{ num1 / num2 | number }} </p>
+  </div>
+</body>
 </html>
