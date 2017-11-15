@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="" >
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <h1>Hello Plunker!</h1>
+    
+<!-- <p>My first expression: {{ 5 + 5 }}</p>    <p>The result of 5+10 is:  <span ng-bind="5+10+'     lalalal' "></span></p> -->
+
+
+     <div ng-init="myarr=[10,20,50];">
+      Sum of numbers in array: <span ng-bind= "myarr[0]+myarr[1]+myarr[2]"></span>
+      </div>
+
+   
+    <div ng-init="person = { firstName : 'John', lastName  : 'Doe',  age : 23,  eyeColor  : 'blue'};">
+    
+      MyObject: <span ng-bind=" person.firstName + person.lastName | uppercase"></span>
+      
+    </div>
+
+
+
+
+</html>
