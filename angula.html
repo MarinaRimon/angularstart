@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html ng-app="" >
+<html ng-app="myAng">
 
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="targi4App.js"></script>
+</head>
 
-  <body>
-    <h1>Hello Plunker!</h1>
+<body>
+  <h1>Hello Angular TARGIL 4 MODUL AND 15 11 2017!</h1>
+  
+  <div ng-controller="targi4App">
+    <input type="number" ng-model="num1" />
+
+    <input type="number" ng-model="num2" />
+
     
-<!-- <p>My first expression: {{ 5 + 5 }}</p>    <p>The result of 5+10 is:  <span ng-bind="5+10+'     lalalal' "></span></p> -->
+    <p> plus: {{ num1 + num2 | number }} </p>
 
-
-     <div ng-init="myarr=[10,20,50];">
-      Sum of numbers in array: <span ng-bind= "myarr[0]+myarr[1]+myarr[2]"></span>
-      </div>
-
-   
-    <div ng-init="person = { firstName : 'John', lastName  : 'Doe',  age : 23,  eyeColor  : 'blue'};">
-    
-      MyObject: <span ng-bind=" person.firstName + person.lastName | uppercase"></span>
-      
+   <!-- <br> minus: <span ng-bind="num1 - num2 | number"></span>
+    <br> kefel: <span ng-bind="num1 * num2 | number"></span>
+    <br> hiluk: <span ng-bind="num1 / num2 | number"></span>
+   -->
     </div>
-
-
-
-
+  </body>
 </html>
